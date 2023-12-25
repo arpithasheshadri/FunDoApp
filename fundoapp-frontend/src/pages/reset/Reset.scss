@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$roboto : 'Roboto', sans-serif;
+
+.reset-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px; 
+    border: 1px solid #dadce0;
+    color: #202124;
+    font-family: $roboto;
+    margin-top: 10vw;
+    margin-left: 38vw;
+    width:fit-content; 
+}
+.reset-content{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5vw;
+}
+.reset-logo-content{
+    margin: 0;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.05rem;
+}
+.reset-content-heading{
+    font-family: $roboto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(37, 36, 36);
+    margin-bottom: 2vh;
+    letter-spacing: 0.05rem;
+}
+.reset-content-description{
+    font-family: $roboto;
+    color: rgb(37, 36, 36);
+    font-weight: bolder;
+    font-size: 1.0rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 3vh;
+}
+.reset-password-field{
+    margin-bottom: 3vh;
+}
+.reset-next-button{
+    margin-bottom: 5vh;
+}
+
+@media only screen and (max-width: 1200px){
+    .reset-container{
+        margin-left: 25vw;
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+    }
+}
+@media only screen and (max-width: 800px){
+    .reset-container{
+        margin-left: 20vw;
+        margin-top: 30vh;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .reset-container{
+        margin: 0;
+        width: 100%;
+        border: none;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .reset-container{
+        margin: 3vw;
+        border: none;
+    }
+}
+@media only screen and (max-width:360px) {
+    .reset-container{
+      margin: 0;
+      border: none;
+    }
+}

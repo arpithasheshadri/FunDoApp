@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$roboto : 'Roboto', sans-serif;
+
+@mixin flexlayout($flexdirection) {
+    display: flex;
+    flex-direction: $flexdirection;
+}
+@mixin fieldspadding{
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.signup-container{
+    @include flexlayout('column');
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    margin: 10vw 30vw; 
+    color: #202124;
+    font-family: $roboto;  
+}
+.form{
+    padding-left: 2vw;
+    padding-right: 3vw;
+}
+.name-field{
+    @include flexlayout('row');
+    @include fieldspadding;
+}
+.current-email{
+    @include fieldspadding;
+    width: 14vw;
+}
+.password-field{
+    @include flexlayout('row');
+    @include fieldspadding;
+}
+
+.email-button{
+    padding: 0;
+    margin: 0;
+}
+.password-helpertext{
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 0.5vw;
+    color: rgb(121, 115, 115);
+}
+.check-box{
+    float: left;
+    @include fieldspadding;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+}
+.signin-button{
+    @include flexlayout('row');
+    float: left;
+    @include fieldspadding;
+    padding-bottom: 8vh;
+    padding-top: 10vh;
+}
+.image-container {
+    padding-right: 2vw;
+    padding-top: 13vh;
+}
+.logo{
+    margin-top: 5vh;
+    margin-left: 2vw;
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.form-heading{
+    margin-top: 10vh;
+    color: black;
+    font-weight:bolder;
+    letter-spacing: 0.08rem;
+    text-align: left;
+    padding-left: 2vw;
+    margin-bottom: 1vh;
+    font-size: 1.5rem; 
+}
+
+@media only screen and (max-width: 1200px) {
+    .signup-container{
+        display: flex;
+        flex-direction: row;
+        margin: 10vh;
+    }    
+    .current-email{
+        width: 100%;
+    }
+    .image-container{
+        display: none;
+    }
+    .form{
+        margin-right: 5vw;
+    }
+    .form-conatiner{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        padding-right: 2vw;
+    }
+    .name-field{
+        width: 100%;
+    }
+    .password-field{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .signup-container{
+        display: flex;
+        flex-direction: row;
+        margin: 10vh;
+    }
+    
+    .current-email{
+        width: 100%;
+    }
+    .image-container{
+        display: none;
+    }
+    .form-conatiner{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        padding-right: 2vw;
+    }
+    .name-field{
+        width: 100%;
+    }
+    .password-field{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .signup-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border: none;
+    }
+    .name-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .password-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .current-email{
+        width: 100%;
+    }  
+    .image-container{
+        display: none;
+    }  
+}
+@media only screen and (max-width: 450px) {
+    .signup-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border: none;
+    }
+    .name-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .password-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .current-email{
+        width: 100%;
+    }  
+    .image-container{
+        display: none;
+    }  
+}
+@media only screen and (max-width:360px) {
+    .signup-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border: none;
+    }
+    .name-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .password-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .current-email{
+        width: 100%;
+    }
+    .image-container{
+        display: none;
+    }
+}

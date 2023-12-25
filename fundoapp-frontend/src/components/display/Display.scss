@@ -1,0 +1,15 @@
+.note .icons {
+    visibility: hidden;
+}
+
+.note:hover .icons {
+    visibility: visible;
+}
+
+.note .pin-icons {
+    visibility: hidden;
+}
+
+.note:hover .pin-icons{
+    visibility: visible;
+}
