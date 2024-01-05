@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  front:
+    container_name: fundoui
+    restart: always
+    build: ./fundoapp-frontend
+    ports:
+      - "3000:3000"
+    links:
+      - back
+  
+  back:
+    container_name: fundoapi
+    restart: always
+    build: ./fundo-backend
+    environment:
+      - MONGO_URI=mongodb+srv://sheshadribhata:85uAhxCgoT0YeGYl@funndo.tspol1p.mongodb.net/?retryWrites=true&w=majority
+    ports:
+      - "8080:8080"
+  
+#  mongo:
+#    container_name: fundodb
+#    image: mongo
+#    restart: always
+#    expose:
+#      - "27017"
+#    volumes:
+#      - ./data:/data/db
+#    ports:
+#      - "27018:27017"
