@@ -1,6 +1,20 @@
 ## FunDoApp Readme
 ### Overview
-FunDoApp is a note-taking application designed for users to create and manage notes, similar to Google Keep. The application is built with a ReactJS front-end, a Spring backend, and MongoDB for database management. The styling is implemented using Sass. FunDoApp provides features like user authentication, note creation, archiving, deletion, and collaboration with other users.
+Welcome to FunDoApp, your go-to note-taking application designed for seamless note creation and management, delivering an experience akin to Google Keep. This application boasts a powerful tech stack with a ReactJS front-end, a meticulously crafted Java and Spring Boot backend, and MongoDB as the robust database. Sass is employed for styling, ensuring a visually appealing and consistent user interface.
+
+
+#### Technologies Used
+#### Front-end:
+ReactJS
+#### Back-end:
+Java, SpringBoot
+#### Database:
+MongoDB
+#### Styling:
+Sass
+#### API Calls:
+Axios
+
 
 ### Features
 #### User Authentication:
@@ -26,14 +40,14 @@ Sass is used for styling, providing a visually appealing and consistent user int
 #### API Calls:
 
 Axios services are utilized for making API calls to the backend, supporting POST, PUT, and GET methods.
-#### Technologies Used
-#### Front-end:
-ReactJS
-#### Back-end:
-Spring Framework
-#### Database:
-MongoDB
-#### Styling:
-Sass
-#### API Calls:
-Axios
+
+### Dockerized Application
+For enhanced portability and efficiency, the entire application is dockerized. Relevant Docker files and configurations are thoughtfully included. Experience the power of FunDoApp with a seamless and scalable deployment.
+
+
+
+
+
+
+
+
